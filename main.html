@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <title>Semantic Navbar with Audio Elements</title>
+    <style>
+      nav {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      nav a:hover {
+        text-decoration: underline;
+      }
 
-</body>
+      audio {
+        margin-top: 2rem;
+      }
 
+      h3 {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <h3>3 Random Audios</h3>
+    <audio controls>
+      <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls>
+      <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+    </audio>
+
+    <audio controls>
+      <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+    </audio>
+  </body>
 </html>
